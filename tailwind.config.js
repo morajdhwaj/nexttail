@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,14 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        main:"#ccdae7"
+      fontSize: {
+        banner: "90px",
       },
-      fontFamily:{
-        inter: 'Inter',
-      }
+      colors: {
+        main: "#ccdae7", 
+        secondry:" #a7b5c4;",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
- 
+};

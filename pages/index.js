@@ -4,7 +4,7 @@ import Banner2 from "../Components/Banner2";
 
 const index = () => {
   return (
-    <div>
+    <div className="max-w-7xl">
       <Banner />
       <Banner2 />
     </div>
