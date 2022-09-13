@@ -1,19 +1,17 @@
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { FingrePrint } from "../Components/icons/SVGs";
 import { HTML } from "../Components/icons/SVGs";
-import Card from "./Card"; 
-
+import Card from "./Card";
+import Link from "next/link";
 
 function Banner2() {
-
-  const [activeIndex , setActiveIndex] = useState("1")
+  const [activeIndex, setActiveIndex] = useState("1");
   return (
     <div className="font-inter text-main  w-full   ">
       <div className="  h-5/6 pl-14">
         <div className="flex items-center space-x-5">
-          <h5 className="text-[10px] text-secondry  ">01. GET STARTED </h5>
-          <div className=" bg-gradient-to-r from-[#21262d] to-[rgba(33, 38, 45, 0)] flex-1  h-[1px] "></div>
+          
         </div>
         <div className="flex space-x-1  pb-20 py-5   w-full">
           <div className=" ">
@@ -37,39 +35,34 @@ function Banner2() {
           </div>
         </div>
       </div>
-      <div className="    sm:flex  ">
-        <div className="  h-full  w-1/3 border border-green-700">
+      <div className=" w-auto    sm:flex h-full sm:w-full  ">
+        <div className="  h-full  w-1/3 border  border-green-700">
           <Card
-     
-          index={"1"}
+            index={"1"}
             title={"Code Export HTML/CSS"}
             discription={
               " zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc"
-
             }
-            image={<HTML/>}
+            image={<HTML />}
           />
           <Card
             index={"2"}
             title={"Code Export HTML/CSS"}
-            discription={
-              " zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc"}
-
-            Image ={<HTML/>}
+            // discription={
+            //   " zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc"
+            // }
+            Image={<HTML />}
           />
           <Card
-          
-
             index={"3"}
             title={"Code Export HTML/CSS"}
-            discription={
-              " zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc"}
-            image = {<HTML/> }
+            // discription={
+            //   " zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc zsianbhd bagsyus sausinbgd bordhs karves nios belgas frac dldnjc"
+            // }
+            image={<HTML />}
           />
-
-             
         </div>
-        <div className=" flex  h-max w-4/5  ">
+        <div className=" flex  h-max w-4/5 ">
           <div className="border border-gray-700 w-4/6 h-96 mx-auto rounded-t-lg overflow-hidden pb-10">
             <div className="h-10 w-full border border-gray-700 flex items-center pl-5 ">
               <button className="bg-red-500 text-transparent rounded-full h-4 w-4 mx-1 "></button>
@@ -79,10 +72,18 @@ function Banner2() {
           </div>
         </div>
       </div>
-      <div className=" flex justify-center items-center mt-10  b ">
-        <div className="border border-white rounded-xl sm:w- 9/12 sm:h-96 flex h-auto w-auto     ">
+      <div className=" flex justify-center items-center mt-40    ">
+        <div className="border border-white rounded-xl sm:w-9/12 sm:h-96 flex h-auto w-auto     ">
           <div className=" h-full  w-10/12 flex  pt-14 justify-end pr-7 ">
-            <div className=" h-28 w-28 flex flex-shrink bg-blue-300   rounded-full "></div>
+            <div className=" h-28 w-28 flex flex-shrink bg-blue-300   rounded-full ">
+              <Image
+                src="/background.jpeg"
+                alt=" "
+                height="500"
+                width="300"
+                className="p-0 m-0 h-full w-full"
+              ></Image>
+            </div>
           </div>
           <div className=" font-bold text-3xl sm:py-14  sm:pr-5 pl-5 ">
             What started out with just three pages showing what can be built
